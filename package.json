@@ -9,18 +9,20 @@
     "build": "webpack",
     "lint": "eslint ./src/**/*.{ts,tsx,js,jsx}",
     "lint:fix": "eslint --fix ./src/**/*.{ts,tsx,js,jsx}",
-    "analyze": "webpack-bundle-analyzer ./dist/bundle-stats.json"
+    "analyze": "webpack-bundle-analyzer ./dist/bundle-stats.json",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KwakHyeonJi/my-place.git"
+    "url": "git+https://github.com/Smang09/my-place.git"
   },
-  "author": "hjKwak",
+  "author": "Smang09",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/KwakHyeonJi/my-place/issues"
+    "url": "https://github.com/Smang09/my-place/issues"
   },
-  "homepage": "https://github.com/KwakHyeonJi/my-place#readme",
+  "homepage": "https://Smang09.github.io/my-place",
   "dependencies": {
     "@react-three/drei": "^9.58.1",
     "@react-three/fiber": "^8.12.0",
@@ -57,6 +59,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.5.0",
     "prettier": "^2.8.4",
     "typescript": "^5.0.2",
